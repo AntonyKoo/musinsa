@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www/thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>무신사 스토어</title>
 </head>
 <body>
-    <h1>Thymeleaf 링크처리 예제 페이지</h1>
+    <h1>MUSINSA</h1>
     <div>
         <a th:href="@{/thymeleaf/ex01}">예제1 페이지로 이동</a>
     </div>
     <div>
-        <a th:href="@{https://www.thymeleaf.org/}">Thymeleaf 공식 페이지로 이동</a>
+        <a th:href="@{https://www.musinsa.com/app/}">무신사 홈페이지로 이동</a>
+    </div>
+    <div>
+        <a th:href="@{/thymeleaf/ex06(param1 = '파라미터 데이터1', param2 = '파라미터 데이터2')}">thymeleaf 파라미터 전달</a>
     </div>
 </body>
 </html>
